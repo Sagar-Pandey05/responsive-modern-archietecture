@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#colorback{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#nav{
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+}
+
+#nav #left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#nav #middle a{
+    display: initial;
+    text-decoration: none;
+    color: #dadada;
+    margin-left: 40px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#nav #middle a:hover{
+    border-bottom: 2px solid #dadada ;
+}
+
+#nav #right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#mid-container{
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: #fff;
+}
+
+#mid-container #top h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+#mid-container #top h1{
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+#mid-container #down{
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#mid-container #down h6{
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+#mid-container #down p{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#whitebox{
+    padding: 30px 70px ;
+    display: flex;
+    gap: 25px;
+    height: 110px;
+    width: 650px;
+    background-color: rgba(255, 255, 255, 0.303);
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+
+#whitebox #box{
+    margin-left: 25px;
+    margin-top: 4px;
+}
+
+
+#whitebox #box h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#whitebox #box p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media (max-width:780px){
+    #nav #middle a:nth-child(5){
+        margin-right: 30px;
+    }
+
+    #mid-container #top h1{
+        font-size: 70px;
+    }
+
+    #mid-container #down{
+        width: 490px;
+    }
+
+    #mid-container #down p{
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    #whitebox{
+        width: 550px;
+        gap: 0px;
+        margin-top: -15px;
+    }
+
+    #whitebox #box h3{
+        white-space: none;
+    }
+}
+
+@media (max-width: 650px){
+    #nav #middle a{
+        display: none;
+    }
+    #mid-container #top h1{
+        font-size: 55px;
+    }
+
+    #mid-container #down{
+        width: 380px;
+        gap: 10px;
+    }
+
+    #mid-container #down h6{
+        font-size: 12px;
+    }
+
+    #mid-container #down p{
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    #whitebox{
+        text-align: center;
+        padding: 20px 70px;
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        height: 200px;
+        gap: 0px;
+        margin-top: -65px;
+    }
+
+    #whitebox #box {
+        margin-bottom: 20px;
+    }
+    #whitebox #box h3{
+        font-size: 16px;
+    }
+
+    #whitebox #box p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 445px){
+    #nav #middle a{
+        display: none;
+    }
+
+    #mid-container #top h1{
+        font-size: 40px;
+    }
+
+    #mid-container #down{
+        width: 280px;
+        gap: 10px;
+    }
+
+    #mid-container #down h6{
+        font-size: 10px;
+    }
+
+    #mid-container #down p{
+        font-size: 9px;
+        font-weight: 300;
+    }
+
+    #whitebox{
+        text-align: center;
+        padding: 15px 70px;
+        display: flex;
+        flex-direction: column;
+        width: 290px;
+        height: 200px;
+        gap: 0px;
+        margin-top: -95px;
+    }
+
+    #whitebox #box {
+        margin-bottom: 20px;
+    }
+    #whitebox #box h3{
+        font-size: 16px;
+    }
+
+    #whitebox #box p{
+        font-size: 12px;
+    }
+}
